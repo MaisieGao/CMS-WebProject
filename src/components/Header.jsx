@@ -11,7 +11,6 @@ function Header(props) {
     const [avatar, setAvatar] = useState(defaultAvatar)
     const [username, setUsername] = useState("tourist")
 
-    // 模拟componentDidMount
     useEffect(() => {
         let username1 = localStorage.getItem('username')
         let avatar1 = localStorage.getItem('avatar')
@@ -23,10 +22,10 @@ function Header(props) {
         }
     }, [props.mykey])
 
-    // 退出登录
+   
     const logout = () => {
         message.success('succesfully signed out')
-        localStorage.clear();   // 清除localStorage中的数据
+        localStorage.clear();   
         setTimeout(() => navigate('/login'), 1500)
     }
 

@@ -7,7 +7,6 @@ export default function Bread() {
     const { pathname } = useLocation()
     const [breadName, setBreadName] = useState('')
 
-  
     useEffect(() => {
         switch (pathname) {
             case "/listlist":

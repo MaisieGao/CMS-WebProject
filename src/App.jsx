@@ -5,7 +5,6 @@ import Header from './components/Header'
 import Aside from './components/Aside'
 import Bread from './components/Bread'
 
-
 function App() {
   return (
     <Layout id='app'>
